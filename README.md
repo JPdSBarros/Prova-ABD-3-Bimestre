@@ -1,5 +1,7 @@
 # Prova-ABD-3-Bimestre
  
+Projeto de Clubes
+ 
 ## User Story
 
 ### #1
@@ -14,15 +16,17 @@ Como dono de um clube, quero gerenciar os menbros do meu clube, a partir de um s
 ## Critérios de aceitação
 
 ### Gerais
-- O banco deve respeitar todos os valores da tabela, portanto nenhum dos dados de um cadastro(seja de clube ou de menbros) pode ser nulo, todos os dados da tabelas tem que estar completos e respeitando o formato;
+- O banco deve respeitar todos os valores da tabela, portanto os dados de um cadastro (seja de clube ou de membros) não podem podem ser nulo, todos os dados das tabelas tem que estar completos e respeitando o formato;
+- Nescessário uma tabela "Pessoa" que servirá como base para definir Donos e Menbros de um Clube.
 - Membros podem pertencer à vários clubes;
+- É nescessário uma tabela apenas com Clubes inscritos com suas respectivas informações e uma tabela individual para cada Clube com seus respectivos Menbros
 - As tabelas devem ter uma relação, para interligar os menbros com seus respectivos clubes.
 
 ### 1º funcionalidade
-O sistema deve realizar o cadastro do clube em uma tabela "Clubes" com as informações: id_clube(chave primaria),nome(tipo string),id_dono(chave estrangeira),data_criacao(tipo data), quantidade de membros(tipo inteiro), no qual nenhuma pode ser um valor nulo.
+O sistema deve realizar o cadastro do clube em uma tabela "Clubes" com as informações: id_clube(chave primaria),nome(tipo string),id_dono(chave estrangeira),data_criacao(tipo data), quantidade de membros(tipo inteiro) e o CNPJ(locais onde realizam seus encontros e atidades, no qual os Clubes podem utilizar mais de um lugar).
 
 ### 2º funcionalidade
-O sistema deve realizar o cadastro de um membro dentro de um clube com as seguintes informações: cpf(chave primária), nome(tipo string), natalidade(data de nacimento, tipo data), telefone de contato(tipo inteiro, uma pessoa se relaciona com apenas um telefone) e fornecer uma relação com a tabela de "Clubes".
+O sistema deve realizar o cadastro de um membro dentro de um clube com as seguintes informações: id_menbro(chave primária) cpf(chave estrangeira), nome(tipo string), natalidade(data de nacimento, tipo data), telefone de contato(tipo inteiro) e fornecer uma relação com a tabela de "Clubes".
 
 ### 3º funcionalidade
 O sistema deve gerar uma tabela(Quantidade_Menbros) com uma consulta sql exibindo a quantidade de menbros de um clube.
@@ -31,3 +35,9 @@ O sistema deve gerar uma tabela(Quantidade_Menbros) com uma consulta sql exibind
 ## Defenition of Done
  
  Ao final do teste e aprovação de cada funcionalidade é nescessário fazer uma revisão no código, realização de um teste geral com todas as funcionalidades, realizar um feedback final do Projeto.
+ 
+ # Modelo Relacional - Projeto de Clubes
+ 
+ ![Modelo relacional- Projeto de Clubes](https://user-images.githubusercontent.com/114430817/193036177-b546d6fa-25f1-4da2-9895-63034d22e4ec.png)
+
+ 
