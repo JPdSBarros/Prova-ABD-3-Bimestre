@@ -1,25 +1,23 @@
-# Prova-ABD-3-Bimestre
+# Prova-ABD-3-Bimestre: Projeto de Clubes
  
-Projeto de Clubes
- 
-## User Story
+## User Story (US)
 
 ### #1
-Como dono de um clube, quero registrar meu clube, a partir de um sitema de cadastro de clubes, para que as pessoas possam se increver no meu clube e para que o meu clube tenha visibilidade nesse sistema
+Como dono de um clube, quero registrar meu clube, a partir de um sitema de cadastro de clubes, para que as pessoas possam se increver no meu clube como membros e para que o mesmo tenha visibilidade com sistema.
 
 ### #2
 Como membro de um clube, quero me increver em um clube, a partir de um sistema de cadastro em clubes, para facilitar o resgistro no clube que desejo entrar.
 
 ### #3
-Como dono de um clube, quero gerenciar os menbros do meu clube, a partir de um sistema para contar os membros, para que tenha um maior controle do meu clube.
+Como dono de um clube, quero gerenciar os membros do meu clube, a partir de um sistema de contagem de membros, para que tenha um maior controle do meu clube.
  
-## Critérios de aceitação
+## Critérios de aceitação (CA)
 
 ### Gerais
 - O banco deve respeitar todos os valores da tabela, portanto os dados de um cadastro (seja de clube ou de membros) não podem podem ser nulo, todos os dados das tabelas tem que estar completos e respeitando o formato;
-- Nescessário uma tabela "Pessoa" que servirá como base para definir Donos e Menbros de um Clube.
-- Membros podem pertencer à vários clubes;
-- É nescessário uma tabela apenas com Clubes inscritos com suas respectivas informações e uma tabela individual para cada Clube com seus respectivos Menbros
+- Nescessário uma tabela "Pessoa" que servirá como base para definir Donos e Menbros de um Clube;
+- Os membros/pessoas podem pertencer à vários clubes;
+- É nescessário uma tabela apenas com Clubes inscritos com suas respectivas informações e uma tabela individual para cada clube com seus respectivos membros;
 - As tabelas devem ter uma relação, para interligar os menbros com seus respectivos clubes.
 
 ### 1º funcionalidade
@@ -32,9 +30,13 @@ O sistema deve realizar o cadastro de um membro dentro de um clube com as seguin
 O sistema deve gerar uma tabela(Quantidade_Menbros) com uma consulta sql exibindo a quantidade de menbros de um clube.
 
  
-## Defenition of Done
+## Defenition of Done (DoD)
  
- Ao final do teste e aprovação de cada funcionalidade é nescessário fazer uma revisão no código, realização de um teste geral com todas as funcionalidades, realizar um feedback final do Projeto.
+- Ao final dos testes e aprovação de cada funcionalidade é nescessário fazer uma revisão no código, realização de um teste geral com todas as funcionalidades; 
+- Realizar um feedback final das funcionalidades;
+- Análise sobre os critérios e metas, para ver o nivel de progresso, verificar se as metas formaram atingidas, segundo o que está descrito na User Story;
+- Nescessário uma revisão na User Story, para realizar adptações nos objetivos, caso haja alguma alteração/ mudança durante o processo de realização do Projeto, ou seja, fazer adaptações e correções na User Story e nos Critérios de Aceitação;
+- Fazer uma avaliação final do Projeto.
  
  # Modelo Relacional - Projeto de Clubes
  
