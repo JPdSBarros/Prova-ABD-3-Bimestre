@@ -41,5 +41,8 @@ O sistema deve gerar uma tabela(Quantidade_Menbros) com uma consulta sql exibind
  # Modelo Relacional - Projeto de Clubes
  
  ![Modelo relacional- Projeto de Clubes](https://user-images.githubusercontent.com/114430817/193036177-b546d6fa-25f1-4da2-9895-63034d22e4ec.png)
-
+ 
+ 
+ 
+ 
  
