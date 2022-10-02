@@ -16,20 +16,20 @@ class Pessoa(Base):
 class Telefone(Base):
     __tabela__ = "telefones"
     id_telefone = Column(Integer, primary_key=True)
-    cpf = Column(Integer, nullable=False)
+    cpf = Column(Integer,ForeignKey("Pessoa.cpf"), nullable=False)
     numero = Column(Integer, nullable=False) 
 
 class Dono(Base):
     __tabela__ = "Donos"
     id_dono = Column(Integer, primary_key=True)
-    cpf = Column(Integer, nullable=False)
+    cpf = Column(Integer,ForeignKey("Pessoa.cpf"), nullable=False)
     data_integracao = Column(Date, nullable=False)
     
 
 class Membro(Base):
     __tabela__ = "Membros"
     id_membro = Column(Integer, primary_key=True)
-    cpf = Column(Integer, nullable=False)
+    cpf = Column(Integer,ForeignKey("Pessoa.cpf"), nullable=False)
     data_integracao = Column(Date, nullable=False)
     
 
@@ -39,7 +39,7 @@ class Clube(Base):
     nome = Column(String(100), nullable=False)
     id_dono = Column(Integer, nullable=False)
     quantidade_membros = Column(Integer, nullable=False)
-    locais= Column(Integer, nullable=False)
+    locais= Column(Integer,ForeignKey("Locais.CNPJ"), nullable=False)
     
 
 class Local(Base):
