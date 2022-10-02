@@ -6,7 +6,6 @@ engine = create_engine(url=URL)
 
 insp = inspect(engine)
 db_list = insp.get_schema_names()
-print(db_list)
 
 
 cx = engine.connect()
