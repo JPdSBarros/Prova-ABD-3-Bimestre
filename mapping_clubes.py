@@ -48,8 +48,7 @@ class Local(Base):
     nome = Column(String(100), nullable=False)
     endereço = Column(String(100), nullable=False) 
     horarios = Column(Date,nullable=False)
-
-
+    
 Base.metadata.create_all(engine)
 
 cx = engine.connect()
