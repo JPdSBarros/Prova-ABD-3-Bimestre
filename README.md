@@ -42,6 +42,10 @@ O sistema deve gerar uma tabela(Quantidade_Menbros) com uma consulta sql exibind
  
  ![Modelo relacional- Projeto de Clubes](https://user-images.githubusercontent.com/114430817/193036177-b546d6fa-25f1-4da2-9895-63034d22e4ec.png)
  
+ # Modelo de Classes UML(StarUML)
+ 
+![image](https://user-images.githubusercontent.com/114430817/193464131-11892d71-1389-47b8-80b7-0ac5332c22ef.png)
+
  
  
  
