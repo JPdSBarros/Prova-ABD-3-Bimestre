@@ -9,6 +9,13 @@ CREATE TABLE IF NOT EXISTS Pessoa (
     natalidade DATE         NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS Telefones (
+    id_telefone  INTEGER      PRIMARY KEY AUTO_INCREMENT,
+    cpf    INTEGER  NOT NULL,
+    numero INTEGER  NOT NULL,
+    CONSTRAINT fk_PesTel FOREIGN KEY (cpf) REFERENCES Pessoa (cpf)
+);
+
 CREATE TABLE IF NOT EXISTS Membros (
     id_membro  INTEGER      PRIMARY KEY AUTO_INCREMENT,
     cpf   INTEGER NOT NULL,
@@ -28,7 +35,7 @@ CREATE TABLE IF NOT EXISTS Locais (
     CNPJ  INTEGER      PRIMARY KEY AUTO_INCREMENT,
     nome       VARCHAR(100) NOT NULL,
     endereço   VARCHAR(100) NOT NULL,
-    horários   DATE NOT NULL
+    horarios   DATE NOT NULL
 
 );
 
