@@ -50,5 +50,7 @@ class Local(Base):
     horarios = Column(Date,nullable=False)
 
 
-
 Base.metadata.create_all(engine)
+
+cx = engine.connect()
+rs = cx.execute("SELECT COUNT(*) FROM Menbros")
